@@ -19,7 +19,9 @@ int[] GenerateRandomArray(int length, int fistNumber, int lastNumber)
 {
     int[] array = new int[length];
     for (int i = 0; i < length; i++)
+    {
         array[i] = new Random().Next(fistNumber, lastNumber + 1);
+    }  
     return array;
 }
 
